@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
   Loader UI components with liquid animation inspired by Spinner Loader - Gooey light Effect
                        DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Takuma Yoshida" => "yoa.jmpr.w@gmail.com" }
-  s.source           = { :git => "https://github.com/yoavlt/LiquidLoader.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/gourane/LiquidLoader.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
