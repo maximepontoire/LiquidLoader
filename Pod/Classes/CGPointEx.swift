@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension CGPoint {
+pubic extension CGPoint {
     
     // 足し算
     func plus(point: CGPoint) -> CGPoint {

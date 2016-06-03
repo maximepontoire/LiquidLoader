@@ -12,22 +12,22 @@ import UIKit
 /**
  * This class is so fast, but allowed only same color.
  */
-class SimpleCircleLiquidEngine {
+public class SimpleCircleLiquidEngine {
 
     let radiusThresh: CGFloat
     private var layer: CALayer = CAShapeLayer()
 
-    var color = UIColor.redColor()
+    public var color = UIColor.redColor()
     
     let ConnectThresh: CGFloat = 0.3
     var angleThresh: CGFloat = 0.5
     
-    init(radiusThresh: CGFloat, angleThresh: CGFloat) {
+    public init(radiusThresh: CGFloat, angleThresh: CGFloat) {
         self.radiusThresh = radiusThresh
         self.angleThresh = angleThresh
     }
 
-    func push(circle: LiquittableCircle, other: LiquittableCircle) -> [LiquittableCircle] {
+    public func push(circle: LiquittableCircle, other: LiquittableCircle) -> [LiquittableCircle] {
         if let paths = generateConnectedPath(circle, other: other) {
             let layers = paths.map(self.constructLayer)
             layers.each(layer.addSublayer)
@@ -36,11 +36,11 @@ class SimpleCircleLiquidEngine {
         return []
     }
     
-    func draw(parent: UIView) {
+    public func draw(parent: UIView) {
         parent.layer.addSublayer(layer)
     }
 
-    func clear() {
+    public func clear() {
         layer.removeFromSuperlayer()
         layer.sublayers?.each{ $0.removeFromSuperlayer() }
         layer = CAShapeLayer()

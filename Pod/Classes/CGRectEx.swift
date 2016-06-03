@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension CGRect {
+public extension CGRect {
     var rightBottom: CGPoint {
         get {
             return CGPoint(x: origin.x + width, y: origin.y + height)

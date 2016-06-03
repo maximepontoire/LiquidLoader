@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Array {
+public extension Array {
     func take(n: Int) -> [Element] {
         if self.count == 0 {
             return []
